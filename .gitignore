@@ -1,0 +1,4 @@
+equity_environnement/
+.env
+__pycache__/
+*.pyc
