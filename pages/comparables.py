@@ -355,8 +355,5 @@ def page_comparables():
        }
        if mode_saisie == "Saisir les données financières (CA, EBITDA...)":
            resume["Données utilisées"] = ", ".join(donnees_disponibles)
-       if 'ebitda_user' in locals():
-           resume["EBITDA utilisateur"] = ebitda_user
-
 
        st.table(pd.DataFrame(resume.items(), columns=["Élément", "Valeur"]).applymap(affiche_valeur))
