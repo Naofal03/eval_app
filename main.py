@@ -2,8 +2,7 @@ import streamlit as st
 from pages.accueil import page_accueil
 from pages.comparables import page_comparables
 from pages.dcf import page_dcf
-from pages.dividendes import page_dividendes  # <-- Ajout de l'import
-
+from pages.dividendes import page_dividendes  
 st.set_page_config(page_title="Évaluation d'Entreprise", layout="wide")
 
 st.markdown("""
@@ -86,7 +85,7 @@ elif st.session_state.page == "Méthode des comparables":
 elif st.session_state.page == "Méthode DCF":
     page_dcf()
 elif st.session_state.page == "Méthode des dividendes":
-    page_dividendes()  # <-- Ajout de l'appel à la nouvelle page
+    page_dividendes()  
 
 
 

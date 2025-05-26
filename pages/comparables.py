@@ -228,7 +228,6 @@ def page_comparables():
        for agg in agregats_selectionnes:
            valeurs_agregats[agg] = st.number_input(
                f"Valeur de l'agrégat '{agg}' de l'entreprise à évaluer",
-               min_value=0,
                step=1000,
                key=f"agregat_{agg}"
            )
@@ -244,7 +243,6 @@ def page_comparables():
                for m in multiples_choisis:
                    ligne[m] = st.number_input(
                        f"{m} - {nom_entreprise} - Année {annee + 1}",
-                       min_value=0.0,
                        step=0.01,
                        key=f"{m}_{i}_{annee}"
                    )
