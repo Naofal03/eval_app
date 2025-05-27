@@ -1,9 +1,39 @@
-**main.py** : Interface principale, choix méthode, info entreprise commune
+# Application d'Évaluation d'Entreprise
 
-**methods/comparables.py** : Module dédié à la méthode des comparables
+Cette application Streamlit permet d'évaluer une entreprise selon plusieurs méthodes financières classiques.
 
-**methods/dcf.py** : Module dédié à la méthode DCF
+## Structure des fichiers
 
-**data_storage.py** : Optionnel, pour sauvegarder les entrées en JSON, CSV ou autre (tu peux commencer sans ça, juste garder en mémoire pendant la session)
+- **main.py** : Interface principale, choix de la méthode, informations générales sur l'entreprise, navigation personnalisée.
+- **pages/accueil.py** : Page d'accueil, explication des méthodes disponibles.
+- **pages/comparables.py** : Module dédié à la méthode des comparables (valorisation par multiples).
+- **pages/dcf.py** : Module dédié à la méthode DCF (Discounted Cash Flow).
+- **pages/dividendes.py** : Module dédié à la méthode des dividendes (DDM).
 
-**utils.py** : Fonctions communes
+
+## Méthodes disponibles
+
+- **Méthode des comparables** : Valorisation par comparaison avec des sociétés similaires (multiples de marché).
+- **Méthode DCF** : Valorisation par actualisation des flux de trésorerie futurs (Discounted Cash Flow).
+- **Méthode des dividendes (DDM)** : Valorisation par actualisation des dividendes futurs attendus.
+- **Navigation** : Personnalisée via des boutons en haut de page, liens directs possibles via l'URL (`?page=dcf`, `?page=dividendes`, etc.).
+
+## Lancement
+
+Dans le dossier du projet, lancez :
+```bash
+streamlit run main.py
+```
+
+## Remarques
+
+- L'application ne nécessite pas la sidebar native de Streamlit (navigation gérée en interne).
+- Les modules dans `pages/` sont importés et utilisés par `main.py` ; ils ne sont pas des pages Streamlit autonomes.
+- Les données ne sont pas sauvegardées entre les sessions sauf si vous utilisez explicitement `data_storage.py`.
+
+## Auteurs
+
+- Naofal AKANHO
+
+
+
