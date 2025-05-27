@@ -18,6 +18,14 @@ Cette application Streamlit permet d'évaluer une entreprise selon plusieurs mé
 - **Méthode des dividendes (DDM)** : Valorisation par actualisation des dividendes futurs attendus.
 - **Navigation** : Personnalisée via des boutons en haut de page, liens directs possibles via l'URL (`?page=dcf`, `?page=dividendes`, etc.).
 
+## Installation des dépendances
+
+Avant de lancer l'application, installez les dépendances nécessaires avec la commande suivante :
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Lancement
 
 Dans le dossier du projet, lancez :
