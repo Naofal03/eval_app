@@ -62,6 +62,12 @@ st.markdown("""
    </style>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+    <style>
+    [data-testid="stSidebar"] {display: none !important;}
+    </style>
+""", unsafe_allow_html=True)
+
 if "page" not in st.session_state:
     st.session_state.page = "Accueil"
 
@@ -85,7 +91,7 @@ elif st.session_state.page == "Méthode des comparables":
 elif st.session_state.page == "Méthode DCF":
     page_dcf()
 elif st.session_state.page == "Méthode des dividendes":
-    page_dividendes()  
+    page_dividendes()
 
 
 
