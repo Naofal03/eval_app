@@ -30,6 +30,7 @@ def page_accueil():
                 '<span style="font-size:1.1em;">'
                 '📊 <b>Méthode des comparables</b> : Comparez votre entreprise à des sociétés similaires.<br>'
                 '💸 <b>Méthode DCF</b> : Actualisez les flux de trésorerie futurs pour estimer la valeur.<br>'
+                '📈 <b>Méthode des dividendes (DDM)</b> : Actualisez les dividendes futurs attendus pour valoriser l\'entreprise.<br>'
                 '</span></div>', unsafe_allow_html=True)
     st.markdown(
         """
